@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    app:cardCornerRadius="8dp"
+    app:cardCornerRadius="10dp"
     app:cardElevation="4dp">
 
     <TextView
@@ -16,13 +16,5 @@
         android:textSize="18sp"
         android:textColor="#000000"
         android:gravity="center" />
-
-    <ImageView
-        android:id="@+id/editIcon"
-        android:layout_width="50dp"
-        android:layout_height="45dp"
-        android:src="@drawable/edit"
-    android:contentDescription="Edit"
-    android:paddingStart="16dp" />
 
 </androidx.cardview.widget.CardView>

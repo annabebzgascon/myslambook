@@ -100,6 +100,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="Age"
+                        android:inputType="number"
                         android:background="@drawable/border"
                         android:padding="12dp"
                         android:textColorHint="#524D4D" />
@@ -116,16 +117,40 @@
                     android:textColorHint="#524D4D"
                     android:focusable="false"
                     android:clickable="true" />
-                <!-- Gender -->
-                <EditText
-                    android:id="@+id/gender"
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:layout_marginTop="15dp"
+                    android:textSize="21sp"
+                    android:layout_marginStart="15dp"/>
+
+                <RadioGroup
+                    android:id="@+id/genderRadioGroup"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:hint="Gender"
-                    android:background="@drawable/border"
-                    android:padding="12dp"
-                    android:textColorHint="#524D4D" />
+                    android:orientation="horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp">
+
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:padding="12dp"
+                        android:textColor="#524D4D" />
+
+                    <RadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:padding="12dp"
+                        android:textColor="#524D4D" />
+                </RadioGroup>
+
 
                 <!-- Address -->
                 <EditText
